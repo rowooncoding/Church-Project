@@ -1,15 +1,16 @@
 import { Text, View } from "react-native";
+import { GestureHandlerRootView, ScrollView, TextInput } from 'react-native-gesture-handler';
+import Cat from './Cat';
+
+console.log(Cat);
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <GestureHandlerRootView style={{ flex: 1}}>
+      <ScrollView>   
+        <Cat name="mango"/>
+      </ScrollView>
+    </GestureHandlerRootView>
+
   );
 }
